@@ -6,7 +6,7 @@ Face mask classification model to detect a person wearing a mask or not. A mobil
 ### Model Description
 1. The input image shape is (150, 150, 3).
 2. Pre-trained Imagenet weights are employed.
-3. The last 10 layers of Mobilenet V2 are unfrozen and trained. 
+3. The first 10 layers of Mobilenet V2 are frozen and the model is trained. 
 4. Batch size is 16 and SGD optimizer with learning rate is 0.01
 5. The Loss function is Binary cross entropy loss.
 
